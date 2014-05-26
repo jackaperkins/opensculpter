@@ -23,7 +23,7 @@ var smoother = new Smoother(0.85, [0, 0, 0, 0, 0]);
             compatibility.requestAnimationFrame(tick);
             
             if (video.readyState === video.HAVE_ENOUGH_DATA) {
-                $(video).objectdetect("all", {classifier: objectdetect.upperbody, scaleMin: 3}, function(coords) {
+                $(video).objectdetect("all", {classifier: objectdetect.frontalface, scaleMin: 4}, function(coords) {
                     if (coords[0]) {
                         coords = smoother.smooth(coords[0]);
                         io.coords = coords;
