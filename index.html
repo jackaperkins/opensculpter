@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Hackathon</title>
+        <style>canvas { width: 100%; height: 100% }</style>
+        <script src="js/jquery.js"></script>
+
+        <script src="js/io.js"></script>
+
+        <script src="js/od/compatibility.js"></script>
+        <script src="js/od/smoother.js"></script>
+        
+        <script src="js/od/objectdetect.js"></script>
+        <script src="js/od/objectdetect.upperbody.js"></script>
+
+        <script src="js/od/jquery.objectdetect.js"></script>
+        <Script src="js/sunglasses.js"></script>
+
+        <script src="js/three.js"></script>
+        <script src="js/renderer.js"></script>
+    </head>
+    <body>
+        <div id="holder" style="width:640; height:480; position:relative;">
+            <video id="video" style=""></video>
+            <div id="canvas-holder" style="width:640; height:480; position: absolute; z-index:300; top: 0; left: 0;"></div>
+        </div>
+        <div id="list" style="display:none;">
+            <img src="img/sunglasses_0.png" style="display:box; width:117px;">
+        </div>
+        <img id="glasses" src="img/sunglasses_0.png" style="position:absolute; display:none">
+    </body>
+</html>
