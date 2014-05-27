@@ -1,4 +1,4 @@
-# 'u-control-it' facial pottery simulator 9000
+# uControl-It facial pottery sim 9000
 
 ### Running in a browser
 The files have to be served from a webserver, running locally or at a distance, rather than locally by opening them directly through file:///. This is because browsers security tl;dr sandboxing blah blah who knows.
